@@ -1,16 +1,9 @@
-// App.js
-import React from 'react';
-import TransactionForm from './components/TransactionForm';
-import TransactionList from './components/TransactionList';
+// transactionActions.js
+import { ADD_TRANSACTION } from './types'; // Importe os tipos, se necessário
 
-const App = () => {
-  return (
-    <div>
-      <h1>Controle de Finanças</h1>
-      <TransactionForm />
-      <TransactionList />
-    </div>
-  );
+export const addTransaction = (transaction) => {
+  return {
+    type: ADD_TRANSACTION,
+    payload: transaction
+  };
 };
-
-export default App;

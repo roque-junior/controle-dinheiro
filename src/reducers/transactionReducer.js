@@ -1,5 +1,5 @@
-// src/reducers/transactionReducer.js
-import { ADD_TRANSACTION } from '../actions/transactionActions';
+// transactionReducer.js
+import { ADD_TRANSACTION } from '../actions/types'; // Importe os tipos, se necessário
 
 const initialState = {
   transactions: []

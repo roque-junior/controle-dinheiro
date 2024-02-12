@@ -2,8 +2,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import TransactionForm from './components/TransactionForm';
-import './styles.css'; // Importando o arquivo CSS
-
 
 const App = () => {
   const transactions = useSelector((state) => state.transactions);
